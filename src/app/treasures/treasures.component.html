@@ -1,0 +1,12 @@
+<div id=“treasure-details” class=“container-fluid”>
+  <div *ngFor = "let treasure of Treasure">
+    <h3>{{treasure.name}} Details</h3>
+    <ul class = "list-group">
+      <li class="list-group-item"><label for="Id"><b>Id:</b><span id=“treasure-id”></span>{{treasure.id}}</label></li>
+      <li class="list-group-item"><label style="width: 100%" for="Name"><b>Name:</b><br>
+        <input class="form-control" type="text" id=“treasure-name” [(ngModel)] = "treasure.name" placeholder="name">
+      </label></li>
+      <li class="list-group-item"><label for="Location"><b>Location:</b><span id=“treasure-location”></span>{{treasure.location}}</label></li>
+    </ul>
+  </div>
+</div>
